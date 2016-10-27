@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+
+\title{Bericht Übungsblatt 2}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Allgemeine Probleme}
+
+\subsection{Beweisausformulierung}
+
+Bei einigen Studierenden fehlte eine Einleitung, in der sie die für die Argumentation notwendigen Variablen definieren und ggf. das Beweisziel formulieren. Auch fehlten Überleitungssätze wie „Es ist damit\textellipsis“ oder „In dieser Gleichung setzen wir $x=0$ ein und erhalten so\textellipsis“. Im Ergebnis gab es so Gleichungen, die „in der Luft schwebten“.
+
+Dabei blieb aber die (gemeinte) Argumentationsstruktur erkennbar. Jedoch beschreibt die Lösung nicht explizit die gewählte Argumentation.
+
+\subsection{Umgang mit Variablen}
+
+Bei einigen fehlte am Anfang die Definition der für den Beweis notwendigen Variablen. Auch wurden oft Variablennamen für unterschiedliche Variablen doppelt verwendet. Dieses Problem trat häufig in Aufgabe 4 auf. Wenn beispielsweise ein Student / eine Studentin den Scheitelpunkt bestimmte, dann nutzte er die Formel $x_0=-\frac{b}{2a}$, obwohl die Variablen $a$ und $b$ bereits in der Definition der Geraden $g$ bzw. $h$ verwendet wurden. Mir fehlte oft auch der Zusatz „für alle $x\in\R$ bei Gleichungen (zum Beispiel bei der Gleichung $ax^2+bx+c=a'x^2+b'x+c'$).
+
+\subsection{Weitere Probleme}
+
+\begin{itemize}
+  \item Es wurde „Sei“ in der Formulierung des Beweisziels verwendet (anstelle von „Zu zeigen“). Dieses Problem trat öfters auf.
+  \item Öfters wurde $\iff$ anstelle vom Gleichheitszeichen verwendet, um Terme miteinander zu verbinden.
+  \item Es wurde der Ausdruck $\R\to\R$ anstelle von $f:\R\to\R$ verwendet. Beispiel: „Sei $f$ eine Gerade $\R\to\R$.“
+\end{itemize}
+
+\section{Aufgabe 2}
+
+\subsection{Fehlyertyp 1 (oft)}
+
+Nachdem $c=c'$ bewiesen wurde, argumentierte der Student / die Studentin weiter:
+
+\begin{align}
+  && ax^2+bx+c & = a'x^2+b'x+c' \\
+  &\implies & ax^2+bx &= a'x^2 +b'x \\
+  &\implies & ax+b & = a'x+b' \\[0.5em]
+  &&& \left\downarrow\ x=0 \right. \\[0.5em]
+  &\implies & b&=b'
+\end{align}
+
+In Übergang von (3) zu (5) wird $x=0$, obwohl die Gleichung (3) wegen dem Übergang von (2) zu (3) nur für $x\in\R\setminus\{0\}$ gilt.
+
+\section{Aufgabe 4}
+
+\begin{itemize}
+  \item Bei der Definition der Geraden wurde oftmals vergesen, dass die Steigungen nicht null sein dürfen.
+  \item Einige haben die Aufgabe so interpretiert, dass die Steigungen der beiden Geraden identisch sind oder dass die $y$-Verschiebung beider Geraden gleich null ist.
+  \item Es fehlte oft die Überprüfung, ob die Öffnung von $f$ ungleich null ist.
+\end{itemize}
+
+\section{Aufgabe 6}
+
+\subsection{Fehlertyp 1 (oft)}
+
+Aus $x_1^2+bx_1+c=x_2^2+bx_2+c$ wurde die Gleichung $b(x_1-x_2)=-(x_1+x_2)(x_1-x_2)$ hergeleitet. Dann wurden beide Seiten durch $x_1-x_2$ geteilt. So funktioniert der Beweis nur für $x_1\neq x_2$. Ein Beweis für den Fall $x_1=x_2$ fehlte.
+
+\section{Schlussbemerkung}
+
+\begin{itemize}
+  \item In den nächsten Wochen sollte geübt werden, wie man mathematische Argumentationen formuliert und aufschreibt.
+  \item Die Studierenden sollten immer wieder darauf hingewiesen werden, dass beim Teilen der Quotiententerm daraufhin überprüft werden muss, ob er null ist.
+  \item In den nächsten Wochen sollte immer mal wieder (wenn es in den aktuellen Stoff passt) erklärt werden, wie man mathematische Symbole einsetzt. Beispielsweise sollte erklärt werden, dass die Junktoren $\implies$ und $\iff$ immer Aussagen verbinden. Auf der linken und rechten Seite dieser Symbole sollten also Aussagen stehen.
+\end{itemize}
+
+\end{document}
