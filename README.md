@@ -1,0 +1,1 @@
+In den einzelnen Unterordner findest du Berichte zu den häufigsten Fehler, welche die Studierenden während dem Lösen der Übungsblatter zur Vorlesung [Einführung in die Mathematik 1 (Wintersemester 2016 / 17)](http://www.aleph1.info/?call=Puc&permalink=em1) gemacht haben.
