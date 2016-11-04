@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+
+\title{Bericht Übungsblatt 2}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Allgemeine Probleme}
+
+Hier beschreibe ich nur Probleme, die ich nicht bereits in den vergangenen Übungsblättern beschrieben habe:
+
+\subsection{Falsche Verwendung von Junktoren}
+
+Junktoren wurden anstelle von natürlichsprachlichen Ausdrücken verwendet, ohne dass an dieser Stelle zwei Aussagen miteinander verknüpft wurden. Ein typisches Beispiel ist der Ausdruck „Die Lösungen sind $(x_1,y_1) \land (x_2,y_2)$“. Hier wird $\land$ anstelle von „und“ verwendet, obwohl hier keine Aussagen miteinander verbunden wurden. Vor allem bei Implikationen $\implies$ und bei Äquivalenzen $\iff$ war dies der Fall. So wurde $\iff$ anstelle des Gleichheitszeichen benutzt, um die Gleichheit von Termen auszudrücken.
+
+\section{Aufgabe 1.6: Schnittpunkt von zwei Geraden}
+
+Die Hauptfehlerquelle war eine mangelnde Fallunterscheidung in $a=c$ und $a\neq c$ (seien $a$ und $c$ die Steigungen der beiden Geraden). So wurde aus $ax+b=g(x)=h(x)=cx+d$ die Gleichung $x=\frac{d-b}{a-c}$ hergeleitet, ohne dass $a\neq c$ vorausgesetzt wurde.
+
+Ein weiterer Fehler war eine nachträgliche Begründung, warum $a\neq c$ ist. Hier wurde aus der Gleichung $x=\frac{d-b}{a-c}$ begründet, dass $a\neq c$ sein müsste, weil man sonst durch Null teilen würde.
+
+Außerdem fehlten häufig Äquivalenzumformungen bei der Berechnung des Schnittpunkts.
+
+\section{Aufgabe 2.7: Gleichungssystem $x+y=s$ und $xy=t$}
+
+In dieser Aufgabe gab es mehrere Fehler, die auftraten. Diese sind:
+
+\begin{itemize}
+  \item Es wurde $xy=t$ nach $y=\frac tx$ umgestellt, ohne dass eine Fallunterscheidung in $y=0$ oder $y\neq 0$ vorgenommen wurde.
+  \item Äquivalenzumformungen wurden nicht explizit als solche markiert.
+  \item Es wurde nicht betrachtet, unter welche Bedingungen an $s$ und $t$ es Lösungen des Gleichungssystems gibt.
+  \item Am Ende war nicht ersichtlich, wie viele und welche Lösungen es zum Gleichungssystem gibt.
+  \item Gleichungen wurden untereinander geschrieben, ohne dass es einen logischen Übergang zwischen den Gleichungen gab.
+\end{itemize}
+
+\section{Aufgabe 3.4: Polynominterpolation}
+
+Hier haben einige das Newton-Interpolationsverfahren genutzt, welches nicht in der Vorlesung behandelt wurde. Dies ist kein Fehler, zeigt aber, dass sie nicht nur mit dem Skript gelernt haben.
+
+Auch haben viele ihr gefundes Polynom nicht darauf überprüft, ob dieses richtig ist. (Falsche Ergebnisse wurden ungeprüft verschickt)
+
+\section{Aufgabe 3.6: $a-b$ teilt $f(a)-f(b)$}
+
+Hier gab es die meisten Schwierigkeiten. So wurde diese Aufgabe von einigen nicht bearbeitet. Auffällig war, dass eine Lösung dominierte. Man definiert $f* = f - f(b)$, welche dann eine Nullstelle bei $x=b$ besitzt. Somit kann von $f*$ der Linearfaktor $x-b$ abgespalten werden. Man erhält $f*(x) = (x-b) g(x)$, wobei $g$ nur ganzzahlige Koeffizienten besitzt (Satz vom Erhalt ganzzahliger Koeffizienten) und setzt dann $x=a$ ein. Bei dieser Lösung wurde häufig nicht begründet, warum $g$ nur ganzzahlige Koeffizienten besitzt bzw. Satz vom Erhalt ganzzahliger Koeffizienten wurde nicht explizit genannt.
+
+\section{Anmerkung}
+
+Mir scheint, dass den Studierenden noch nicht klar ist, was welche Implikationsrichtung bedeutet und wann welche Implikationsrichtung gezeigt werden muss. Insbesondere scheinen sie Probleme damit zu haben, wann ein Äquivalenzbeweis notwendig ist und wann nicht.
+
+\end{document}
