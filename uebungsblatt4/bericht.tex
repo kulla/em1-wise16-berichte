@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+
+\title{Bericht Übungsblatt 2}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 5.1}
+
+Hier hatten einige Studierende Probleme, den richtigen Term zu finden. Zum Teil wurde $f(x)=e^{ax}$ definiert und nur der Spezialfall $c=1$ betrachtet (ohne dass dies als Beispiel betrachtet wurde). Auch wurde manchmal $a=1$ im Beweis hergeleitet, ohne dass $a\in\R$ beliebig Ein anderer Fehler war $f(x)=\exp(ax+\ln(c))$, welcher für $c \le 0$ nicht definiert ist.
+
+Generell wurde gut zwischen Existenz- und Eindeutigkeitssatz unterschieden. Jedoch waren beim Eindeutigkeitssatz die Probleme größer. Zum Teil wurde hier implizit $f(x)=ce^{ax}$ angenommen und dann $f(x)=ce^{ax}$ bewiesen. Insofern sollten Existenz- und Eindeutigkeitssätze weiter geübt werden. Jedoch ist diese Aufgabe in meinen Augen sehr gut geeignet und sollte in den kommenden Semester wieder als Aufgabe behandelt werden. Hier ist aber eine enge Betreuung notwendig. Das Feedback zeigte mir nämlich, dass der Hinweis der Aufgabe nicht ausreichte. Hier könnte der weitere Zusatz helfen, dass die Funktion $h:\R\to\R$ mit $h(x)=f(x)e^{-ax}$ betrachtet werden soll.
+
+Ein anderer Ansatz der Studierenden war der, dass zwei Funktionen $f$ und $g$ mit den geforderten Eigenschaften angenommen wurden. Nun wurde eine Hilfsfunktion $h$ mit $h(x)=\frac{f(x)}{g(x)}$ angenommen und dann hergeleitet, dass $h(x)=1$ für alle $x\in\R$ sein muss (in meinen Augen ist dies schon eine sehr gute Leistung). Jedoch fehlte in diesem Beweis eine Betrachtung, ob $g$ Nullstellen besitzt. Zumindestens eine Fallunterscheidung in $c=0$ und $c\neq 0$ ist hier notwendig.
+
+\section{Aufgabe 5.2}
+
+Das Richtungsfeld wurde in der Regel richtig (und auch sauber) gezeichnet. In der ersten Teilaufgabe gab es also keine Probleme. Wenige haben als Differentialgleichung $f'(x)=\frac{1}{x}$ benutzt.
+
+In der zweiten und dritten Teilaufgabe gab es mehr Probleme. Diese waren:
+
+\begin{itemize}
+  \item Es fehlte die Bedingung $y_0\neq 0$.
+  \item Es wurde die Lösung $f(x)=\ln(x)+y_0-\ln(x_0)$ oder $f(x)=\sqrt{2x}+y_0-\sqrt{2x_0}$ angegeben.
+  \item Es wurde in der Rechnung $\sqrt{y_0^2}=y_0$ anstelle von $\sqrt{y_0^2}=|y_0|$ verwendet und so fehlte die Fallunterscheidung in $y_0 < 0$ und $y_0>0$.
+  \item Der Definitionsbereich $P$ von $f$ wurde häufig falsch angegeben. Häufige Angaben waren $P=\R$, $P=\R\setminus\{0\}$ oder $P=\R^{+}$.
+\end{itemize}
+
+\section{Aufgabe 5.9}
+
+Diese Aufgabe wurde am Besten gelöst. Hier gab es keine großen Probleme. Manchmal fehlten Graphen der Potenz- / Logarithmusfunktion für Basen $a<1$.
+
+\section{Aufgabe 5.10}
+
+Auch diese Aufgabe wurde in der Regel gut gelöst. Am Rande habe ich mitbekommen, dass zumindest einige sich Lösungen aus dem Internet geholt und angewandt haben. Aus dem Beweis wurde aber deutlich, dass sie diese Lösung gut durchdrungen haben.
+
+Häufigste Fehlerquelle, war die implizite Annahme, dass $y\in\N$ ist. So gab es folgende „Lösungen“:
+
+\begin{align}
+  \log_a\left(x^y\right) = \log_a\left(\underbrace{x\cdot x\cdots x}_{y\text{-mal}}\right) = \underbrace{\log_a(x)+\dots + \log_a(x)}_{y-\text{-mal}} = y \log_a(x)
+\end{align}
+
+Auch wurden manchmal Umformungen verwendet, die nicht im Skript bewiesen wurden oder es wurde innerhalb der Umformungen die zu zeigende Termumformung $\log_a(x^y)=y\log_a(x)$ verwendet.
+
+\end{document}
