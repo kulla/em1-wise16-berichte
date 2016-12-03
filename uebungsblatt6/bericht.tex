@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+
+\title{Bericht Übungsblatt 6}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 2.2.1}
+
+\subsection{Aufgabenstellung}
+
+Sei $f:\R\to\R$ mit $f(x)=x^2$. Weiter sei $p\in\R$.
+
+\begin{enumerate}
+  \item Bestimmen Sie die Tangente von $f$ an der Stelle $p$.
+  \item Bestimmen Sie die Restfunktion $f:\R\to\R$ und weisen Sie die Limesbedingung des Approximationssatzes nach.
+  \item Zeichen Sie f sowie die Tangenden und Restfunktion für die Stellen $p=1$ und $p=2$.
+\end{enumerate}
+
+\subsection{Allgemeine Anmerkungen}
+
+Diese Aufgabe wurde in der Regel sehr gut gelöst. Es zeigten sich bei den Studierenden nur wenige Probleme.
+
+\subsection{Zur ersten Teilaufgabe}
+
+Hier wurde manchmal für die Tangente $g$ die Zuordnungsvorschrift $g(p)=2px-p^2$ anstelle von $g(x)=2px-p^2$ angegeben.
+
+\subsection{Zur zweiten Teilaufgabe}
+
+Auch hier gab es wenige Probleme. Einige haben in der Bestimmung der Limesbedingung nicht $r(x)=(x-p)^2$, sondern allgemein $r(x)=f(x)-f(p)-f'(p)(x-p)$ eingesetzt und somit den Beweis allgemein mit Hilfe der Differentialdefinition der Ableitung gelöst.
+
+\subsection{Zur dritten Teilaufgabe}
+
+In wenigen Fällen wurde die Restfunktion $r(x)$ nicht eingezeichnet.
+
+\section{Aufgabe 2.1.3}
+
+\subsection{Aufgabenstellung}
+
+Seien $f,g:P\to\R$ differenzierbar an der Stelle $p\in P$. Weiter seien $a,b\in\R$ und $h=af+bg$. Zeigen Sie
+
+\begin{enumerate}
+  \item durch Berechnung des Differentialquotienten,
+  \item mit Hilfe des linearen Approximationssatzes und der Landau-Notation,
+\end{enumerate}
+
+dass $h$ an der Stelle $p$ differenzierbar mit $h'(p)=af'(p)+bg'(p)$ ist.
+
+\subsection{Anmerkungen}
+
+Die erste Teilaufgabe wurde in der Regel sehr gut gelöst. Hier gab es wenige Probleme. Die zweite Teilaufgabe hat hier mehr Probleme bereitet. Einigen Studierenden war nicht klar, wie sie vorgehen müssen. Auch wurden Regeln im Umgang mit der o-Notation entweder nicht bewiesen oder Studierende berichteten, dass sie ohne Hilfe diese Regeln nicht beweisen konnten. Hier lohnt es, den Studierenden eine ähnliche Aufgabe mit einer Musterlösung im Vorfeld zukommen zu lassen.
+
+\section{Aufgabe 2.2.1}
+
+\subsection{Aufgabenstellung}
+
+\begin{enumerate}
+  \item Zeigen Sie $\frac{\mathrm d}{\mathrm dx} x^n = nx^{n-1}$ für alle $n\ge 1$ induktiv mit Hilfe der Produktregel.
+  \item Leiten Sie die Quotientenregel aus der Produkt- und Kettenregel ab, unter Verwendung von $\frac{\mathrm d}{\mathrm dx} \frac 1x = -\frac 1{x^2}$.
+\end{enumerate}
+
+\subsection{Anmerkungen}
+
+Die Induktionsaufgabe wurde in der Regel gut gelöst. Es gab nur wenige Probleme mit der Schreibweise. So wurde im Induktionsschritt oftmals $\frac{\mathrm d}{\mathrm dx} x^1 = 1x^{1-1}=1$ anstelle von $\frac{\mathrm d}{\mathrm dx} x^1 =1= 1x^{1-1}$ geschrieben. Auch hier sollte es eine Musteraufgabe zur vollständigen Induktion geben, woran sich die Studierenden orientieren können (dies ist wichtig, da dies die erste Aufgabe zur vollständigen Induktion ist).
+
+In der zweiten Aufgabe war das Hauptproblem, dass die Ableitung $\frac{\mathrm d}{\mathrm dx} \frac 1x = -\frac 1{x^2}$ und nicht die Quotientenregel bewiesen wurde. Hier sollte gegebenenfalls die Aufgabenstellung geändert werden.
+
+\section{Aufgabe 2.2.4}
+
+\subsection{Aufgabenstellung}
+
+Beweisen Sie, soweit noch nicht erfolgt, die tabellarisch angegebenen Formeln für die Ableitung der trogonometrischen Funktionen (einschließlich ihrer Umkehrfunktionen).
+
+\subsection{Anmerkungen}
+
+Hier gab es kaum Probleme. In Zukunft wäre es gut, wenn es eine Musteraufgabe zur Berechnung einer Ableitung mit Hilfe der Umkehrfunktion gibt, damit sich die Studierenden daran orientieren können (hier können mehrere Schreibweisen vorgestellt werden). Einzig die Ableitungen von $\operatorname{arccsc}$ und $\operatorname{arcsec}$ haben Probleme bereitet.
+
+\end{document}
