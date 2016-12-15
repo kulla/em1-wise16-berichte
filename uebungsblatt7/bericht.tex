@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+
+\title{Bericht Übungsblatt 7}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 2.2.8}
+
+\subsection{Aufgabenstellung}
+
+Plotten Sie (mit Hilfe des Computers) die Kosinus-Funktion und die fünf Polynome
+
+\begin{align*}
+  p_n(x) = \sum_{k=0}^n (-1)^k \frac{x^2k}{(2k)!} \text{ für } n=1,\ldots,5
+\end{align*}
+
+Erstellen Sie zudem eine Tabelle, die den numerischen Unterschied zwischen $\cos(x)$ und $p_n(x)$ für $n=1,\ldots,5$ und $x=\frac{1}{10}$, $1$,$\frac{\pi}{2}$ und $10\pi$ illustriert.
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde sehr gut gelöst. Es fehlte manchmal der 0-te Summand, aber dies lässt sich drauf zurückführen, dass am Anfang der Woche in der Summe $1\le k$ anstelle von $0\le k$ stand. Weitere Probleme waren, dass in der Tabelle nicht ausreichend viele Nachkommastellen angegeben wurden, um die Veränderung der Approximationswerte zu sehen. In wenigen Fällen wurden die einzelnen Summanden $s_n = (-1)^n \frac{x^2n}{(2n)!}$ an Stelle des $n$-ten Taylorpolynoms betrachtet. Hier waren entsprechend das Diagramm wie auch die Tabelle falsch.
+
+\section{Aufgabe 2.3.8}
+
+\subsection{Aufgabenstellung}
+
+Die Taylorreihe des Arkustangens konvergiert nur für $x\in[-1,1]$. Zeigen Sie, dass 
+
+\begin{align}
+  \operatorname{arctan}\left(x^{-1}\right)= \operatorname{sgn}(x) \frac{\pi}2 - \operatorname{arctan}(x)\text{ für alle } x\neq 0
+\end{align}
+
+und beschreiben Sie, wie sich mit Hilfe dieses Ergebnisses der Wert $\operatorname{arctan}(x)$ für ein beliebiges $x\in \R$ approximativ berechnen lässt.
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde selten bearbeitet, da sie als Zusatzaufgabe aufgegeben wurde. Die Lösungen, die hier abgegeben wurden, waren in der Regel richtig.
+
+\section{Aufgabe 2.4.1}
+
+\subsection{Aufgabenstellung}
+
+Sei $f:[0,1]\to\R$ mit $f(x)=x$ für alle $x$. Für alle $n$ sei $p_n$ eine äquidistante Partition von $[0,1]$ der Länge $n$ (und beliebigen Stützstellen). Zeigen Sie
+
+\begin{align}
+  \lim_{n\to\infty} \sum_{p_n} f = \frac 12
+\end{align}
+
+\subsection{Anmerkungen}
+
+Bei dieser Aufgabe wurde oft nicht der gewünschte Lösungsweg eingeschlagen (obwohl es hierzu eine gesonderte Rundmail am Anfang der Übungswoche gab). So wurde diese Aufgabe über das Riemann-Integral oder über die Grundvorstellung des Integrals als Mittelwert der Funktion gelöst. Insofern sollte die Aufgabenstellung geändert werden und der gewünschte Lösungsweg explizit genannt werden.
+
+Ein weiterer falscher Lösungsweg war der, nur die Partitionen mit $x_k = t_k = \frac kn$ zu betrachten. Zum Teil wurde hier die Riemann-Summe für konkrete $n$ wie $n=10$ oder $n=100$ ausgerechnet und es fehlte die Grenzwertbetrachtung (diese Lösung kann man als Teillösung anerkennen, wenn der Studierende nicht auf den endgültigen Beweis kommt). Auch wurde manchmal die Riemann-Summe für $n=10$ ausgerechnet, bei der zufälligerweise das Ergebnis gleich $\frac 12$ ist. Eine Grenzwertbetrachtung fehlte hier komplett.
+
+\section{Aufgabe 2.4.5}
+
+\subsection{Aufgabenstellung}
+
+Berechnen Sie die Fläche des Einheitskreises mit Hilfe von Integration und der Funktion $F:[-1,1]\to\R$ mit $F(x)=x\sqrt{1-x^2}+\operatorname{arcsin}(x)$ für alle $x\in[-1,1]$.
+
+\subsection{Anmerkungen}
+
+Diese Lösungen zu dieser Aufgabe waren in der Regel gut oder sehr gut. Manchmal wurde $F$ fälschlicherweise als Stammfunktion von $f:[-1,1]\to\R$ mit $f(x)=\sqrt{1-x^2}$ identifiziert, so dass das Endergebnis falsch war. Leider haben die Studierende hier versäumt, ihre Lösung mit Schulwissen über den Kreisflächeninhalt zu überprüfen. Ein anderer Punkt war der, dass Studierende nicht erklärt haben, wie sie auf den Term $\int_{-1}^1 f(x) \mathrm dx$ gekommen sind. Hier sollte man den Studierenden am Anfang des Semesters sagen, dass die Aufgabenstellung „Berechne“ auch involviert, dass die einzelnen Rechenschritte erklärt und für Dritte verständlich sein müssen.
+
+\end{document}
