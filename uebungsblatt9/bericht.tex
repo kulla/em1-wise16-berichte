@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Übungsblatt 9}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 2.5.9}
+
+\subsection{Aufgabenstellung}
+
+Zeigen Sie mit Hilfe einer Arkustangens-Substitution und trigonometrischer Identitäten, dass
+
+\begin{align}
+  \int \operatorname{sec}(x) \dx & = \int \frac 1{\cos(x)} \dx = \log\left(\frac{1+\tan\left(\frac x2\right)}{1-\tan\left(\frac x2\right)}\right) \\
+  &= \log\left(\tan\left(\frac x2 + \frac \pi4\right)\right) \\
+  &= \log\left(\cos\left(\frac x2\right)+\sin\left(\frac x2\right)\right)- \log\left(\cos\left(\frac x2\right)-\sin\left(\frac x2\right)\right) \\
+  &= \log(\tan(x)+\sec(x))
+\end{align}
+
+\subsection{Anmerkungen}
+
+In dieser Aufgabe haben die meisten Studierenden die notwendigen Termumformungen gefunden. Es gab wenige Studierende, die nur das Integral bestimmt haben, ohne dass sie die restlichen Identitäten nachgeprüft haben. Abzüge gab es neben Flüchtichkeitsfehler in den Termumformungen wegen Fehlern in der Notation. So wurden manchmal Klammern vergessen oder Äquivalenzpfeile falsch gesetzt.
+
+Aus meiner Sicht war es manchmal schwer erkennbar, was eine Termumformung war und wo Kommentare zu den Rechnungen eingefügt wurden. In Zukunft sollte gesondert geübt oder gezeigt werden, wie man Gleichungsketten Übersichtlich gestaltet und wie man diese durch Kommentare ergänzen kann (beispielsweise in der Tabellenform).
+
+\section{Aufgabe 3.1.1}
+
+\subsection{Aufgabenstellung}
+
+Zeigen Sie in Analogie zum Beweis der Irrationalität von $\sqrt 2$, dass $\sqrt 3$ irrational ist. Warum scheitert der Beweis bei $\sqrt 4$? Auf welche Zahlen lässt sich das Argument allgemein anwenden?
+
+\subsection{Anmerkungen}
+
+Der Beweis der Irrationalität von $\sqrt 3$ bereitete den Studierenden keine Probleme. Es gab nur wenige, die hier falsche Beweise abgegeben haben. Schwieriger waren die beiden Zusatzfragen: So wurde zwar bei der Frage, warum der Beweis bei $\sqrt 4$ scheitert, oft richtig bemerkt, dass hier die 2-Exponenten beide gerade sind. Jedoch wurde daraus der falsche Schluss gezogen, dass damit $\sqrt 4$ rational sein muss.
+
+Auch die Frage, auf welche Zahlen dieser Beweis anwendbar ist, wurde oft nicht vollständig beantwortet. Die häufigste falsche bzw. nicht vollständige Antwort war hier die Menge der Primzahlen. Auch wurde das Komplement der Quadratzahlen in $\N$ als Antwort gegeben, ohne dass dies begründet wurde.
+
+\section{Aufgabe 3.2.3}
+
+\subsection{Aufgabenstellung}
+
+Zeigen Sie mit Hilfe der $\epsilon$-Definition, dass ein Grenzwert einer konvergenten Folge $(x_n)_{n\in\N}$ eindeutig bestimmt ist. Zeichnen Sie ein Diagramm, das die Beweisidee erläutert.
+
+\subsection{Anmerkungen}
+
+Der Beweis in dieser Aufgabe war oftmals richtig. Dies lag aber auch daran, dass die Studierenden hier einen Beweis aus dem Internet direkt übernommen hatten. Bei Denjenigen, die den Beweis selbstständig geführt haben, trat sehr oft das Problem auf, dass sie aus der Aussageform $\forall \epsilon > 0 \exists n_0 \in\N\forall n\ge n_0 : |x-x_n| < \epsilon$ direkt auf die Ungleichung $|x-x_n|<\epsilon$ geschlossen haben. Ihre Beweisidee war richtig, jedoch war so das formale Aufschreiben falsch. In Zukunft sollte im Vorfeld geübt oder gezeigt werden, wie man sich aus einer gegebenen Aussage mit Quantoren die Kerngleichung bzw. -ungleichung holt. Insbesondere müssen die Studierenden sensibilisiert werden, dass sie alle Variablen definieren, die sie in ihrem Beweis verwenden.
+
+Selten trat das Problem auf, dass aus einer Ungleichung im Laufe des Beweis eine Gleichung wurde.
+
+\section{Aufgabe 3.2.6}
+
+\subsection{Aufgabenstellung}
+
+\begin{enumerate}
+  \item Bestimmen Sie die Partialsummen $s_n$ und den Wert der Reihe
+
+    \begin{align}
+      \sum_{n\ge 1} \frac{1}{n(n+1)} = \frac{1}{1\cdot 2}+\frac{1}{2\cdot 3}
+    \end{align}
+
+  \item Zeigen Sie mit Hilfe von (a), dass die Reihe $\sum_n \frac 1{n^2}$ konvergiert.
+
+  \item Lässt sich das Quotientenkriterium verwenden, um die Konvergenz der Reihe $\sum_{n\ge 1} 1/{n^2}$ zu beweisen?
+\end{enumerate}
+
+\subsection{Anmerkungen}
+
+\begin{enumerate}
+  \item Die Partialsumme wie auch der Wert der Reihe wurde oft richtig bestimmt. Jedoch wurde dabei die Schreibweise für die Reihe mit der der Partialsumme oft vertauscht. Dabei nutzen die Studierenden folgende falsche Schreibweisen für die Partialsumme:
+
+    \begin{itemize}
+      \item $\sum_{n\ge 1} \frac{1}{n(n+1)}$
+      \item $\sum_1^n \frac{1}{n(n+1)}$
+    \end{itemize}
+
+    In Zukunft sollte also der Unterschied zwischen der Reihen- und der Partialsummenschreibweise deutlich gemacht werden. Durch Nachfragen habe ich bemerkt, dass auch der Unterschied zwischen $\sum_{k=1}^n \frac{1}{k(k+1)}$ und $\sum_{k=1}^n \frac{1}{n(n+1)}$
+
+  \item Hier traten zwei Probleme auf:
+
+    \begin{itemize}
+      \item Die Studierenden nutzen die falsche Ungleichung $\frac 1{n^2} < \frac{1}{n(n+1)}$ zusammen mit dem Majorantenkriterium.
+      \item Die Studierenden argumentierten intuitiv, dass aufgrund der Konvergenz von $\left|\frac 1{n^2} - \frac{1}{n(n+1)}\right|\to 0$ auch $\sum \frac {1}{n^2}$ konvergieren muss.
+    \end{itemize}
+
+  \item Hier argumentierten die meisten richtig, indem sie $\lim_{n\to\infty} \left|\frac{x_{n+1}}{x_n}\right|$ berechneten. Jedoch fehlte hier der Bezug zum Quotientenkriterium, wie wir ihn in der Vorlesung behandelt haben. Interessanterweise trat hier oft die Termumformung $\frac{a^2}{b^2} = \frac ab$ auf, welche ich mir in dieser hohen Zahl nicht erklären kann.
+\end{enumerate}
+
+\end{document}
