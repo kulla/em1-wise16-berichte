@@ -28,6 +28,12 @@ Junktoren wurden anstelle von natürlichsprachlichen Ausdrücken verwendet, ohne
 
 \section{Aufgabe 1.6: Schnittpunkt von zwei Geraden}
 
+\subsection{Aufgabenstellung}
+
+Wann besitzen zwei Geraden $g,h:\R\to\R$ genau einen Schnittpunkt? Finden Sie ein Kriterium für die vier Parameter der Geraden und beweisen Sie es. Leiten Sie zudem im Fall der eindeutigen Existenz eine Formel für den Schnittpunkt her.
+
+\subsection{Anmerkungen}
+
 Die Hauptfehlerquelle war eine mangelnde Fallunterscheidung in $a=c$ und $a\neq c$ (seien $a$ und $c$ die Steigungen der beiden Geraden). So wurde aus $ax+b=g(x)=h(x)=cx+d$ die Gleichung $x=\frac{d-b}{a-c}$ hergeleitet, ohne dass $a\neq c$ vorausgesetzt wurde.
 
 Ein weiterer Fehler war eine nachträgliche Begründung, warum $a\neq c$ ist. Hier wurde aus der Gleichung $x=\frac{d-b}{a-c}$ begründet, dass $a\neq c$ sein müsste, weil man sonst durch Null teilen würde.
@@ -35,6 +41,18 @@ Ein weiterer Fehler war eine nachträgliche Begründung, warum $a\neq c$ ist. Hi
 Außerdem fehlten häufig Äquivalenzumformungen bei der Berechnung des Schnittpunkts.
 
 \section{Aufgabe 2.7: Gleichungssystem $x+y=s$ und $xy=t$}
+
+\subsection{Aufgabenstellung}
+
+Seien $s,t\in\R$. Bestimmen Sie die Lösungen des Gleichungssystems
+
+\begin{align}
+  x+y=s,xy=t
+\end{align}
+
+in den reellen Unbekannten $x,y$.
+
+\subsection{Anmerkungen}
 
 In dieser Aufgabe gab es mehrere Fehler, die auftraten. Diese sind:
 
@@ -48,11 +66,25 @@ In dieser Aufgabe gab es mehrere Fehler, die auftraten. Diese sind:
 
 \section{Aufgabe 3.4: Polynominterpolation}
 
+\subsection{Aufgabenstellung}
+
+Sei $f$ ein Polynom vom Grad 3 und es gelte $f(x)=\frac 1x$ für $x=1,\ldots,4$. Bestimmen Sie $f(5)$.
+
+\subsection{Anmerkungen}
+
 Hier haben einige das Newton-Interpolationsverfahren genutzt, welches nicht in der Vorlesung behandelt wurde. Dies ist kein Fehler, zeigt aber, dass sie nicht nur mit dem Skript gelernt haben.
 
 Auch haben viele ihr gefundes Polynom nicht darauf überprüft, ob dieses richtig ist. (Falsche Ergebnisse wurden ungeprüft verschickt)
 
 \section{Aufgabe 3.6: $a-b$ teilt $f(a)-f(b)$}
+
+\subsection{Aufgabenstellung}
+
+Sei $f$ ein Polynom mit ganzzahligen Koeffizienten. Weiter seien $a,b$ ganze Zahlen. Zeigen Sie, dass $a-b$ ein Teiler von $f(a)-f(b)$ ist, d.h.: Es gibt eine ganze Zahl $d$ mit $d(a-b)=f(a)-f(b)$.
+
+Hinweis: Spalten Sie eine Nullstelle eines geeignet definierten Polynoms ab.
+
+\subsection{Anmerkungen}
 
 Hier gab es die meisten Schwierigkeiten. So wurde diese Aufgabe von einigen nicht bearbeitet. Auffällig war, dass eine Lösung dominierte. Man definiert $f* = f - f(b)$, welche dann eine Nullstelle bei $x=b$ besitzt. Somit kann von $f*$ der Linearfaktor $x-b$ abgespalten werden. Man erhält $f*(x) = (x-b) g(x)$, wobei $g$ nur ganzzahlige Koeffizienten besitzt (Satz vom Erhalt ganzzahliger Koeffizienten) und setzt dann $x=a$ ein. Bei dieser Lösung wurde häufig nicht begründet, warum $g$ nur ganzzahlige Koeffizienten besitzt bzw. Satz vom Erhalt ganzzahliger Koeffizienten wurde nicht explizit genannt.
 
