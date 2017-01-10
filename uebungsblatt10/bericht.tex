@@ -1,0 +1,123 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\C}{\mathbb C}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Übungsblatt 10}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 3.3.4}
+
+\subsection{Aufgabenstellung}
+
+Sei $f:P\to\R$, und sei $p\in P$. Die $\epsilon$-$\delta$-Stetigkeit von $f$ an der Stelle $p$ lautet:
+
+\begin{align}
+  \forall \epsilon > 0\, \exists \delta > 0\, \forall x \in P: |x-p|<\delta \to |f(x)-f(p)|<\epsilon
+\end{align}
+
+\begin{enumerate}
+  \item Welche Bedeutung hat die Aussage
+
+    \begin{align}
+      \exists \delta > 0\,\forall \epsilon > 0\,\forall x \in P (|x-p|<\delta \to |f(x)-f(p)|<\epsilon)
+    \end{align}
+
+    bei der die Quantoren über $\epsilon$ und $\delta$ vertauscht sind?
+
+  \item Welche Bedeutung hat die Aussage
+
+    \begin{align}
+      \exists \epsilon > 0\,\forall \delta > 0\,\forall x\in P(|x-p|<\delta\to|f(x)-f(p)|<\epsilon)
+    \end{align}
+
+      bei der die Quantoren über $\epsilon$ und $\delta$ vertauscht sind?
+
+    \item Welche Bedeutung hat die Aussage
+
+      \begin{align}
+        \forall \epsilon > 0\,\exists \delta > 0\,\exists x\in P\,(|x-p|<\delta \to |f(x)-f(p)|<\epsilon
+      \end{align}
+
+      bei der der letzte Allquantor durch einen Existenzquantor geworden ist?
+\end{enumerate}
+
+\subsection{Anmerkungen}
+
+Bei der Übersetzung der Aussageform in natürlicher Sprache waren folgende Fehler erkennbar:
+
+\begin{itemize}
+  \item Das Implikationssymbol $\to$ in $|x-p|<\delta \to |f(x)-f(p)|<\epsilon$ wurde als Konjunktion interpretiert.
+  \item Die Aussageform $\exists \delta \forall \epsilon$ wird übersetzt durch „Es gibt ein $\delta$ für alle $\epsilon$ ...“ übersetzt, was leicht als $\forall \epsilon \exists \delta$ übersetzt werden kann.
+\end{itemize}
+
+In der ersten Teilaufgabe wurde oft angegeben, dass $f$ konstant sei. Mir scheint, dass die Studierenden übersehen, dass in dieser Aufgabe $p$ konstant ist. So wurde auch angegeben, dass es ausreicht, wenn $f$ lokal konstant ist, jedoch fehlte die Anmerkung, dass $f$ um den Punkt $p$ lokal konstant ist. So gab es nur sehr wenige, die die erste Teilaufgabe richtig gelöst haben. Auch die anderen beiden Teilaufgaben wurden selten richtig gelöst.
+
+\section{Aufgabe 3.3.6}
+
+\subsection{Aufgabenstellung}
+
+Weisen Sie sowohl mit Hilfe der $\epsilon$-$\delta$-Stetigkeit als auch mit Hilfe der Folgenstetigkeit nach, dass die Vorzeichenfunktion $\operatorname{sgn}:\R\to\R$ unstetig im Nullpunkt ist. Zeichnen Sie Diagramme zur Illustration Ihrer Beweise.
+
+\subsection{Anmerkungen}
+
+Die Beweisideen waren oftmals richtig. Der Beweis mit der Folgenstetigkeit wurde dabei oftmals besser als der Beweis mit dem $\epsilon$-$\delta$-Kriterium geführt. Hier wurde jedoch manchmal mit den Grenzwerten $\lim_{x\nearrow0} f(x)$ und $\lim_{x\searrow0} f(x)$ anstelle mit Folgen argumentiert.
+
+Der Unstetigkeitsbeweis beim $\epsilon$-$\delta$-Kriterium wurde oftmals als Widerspruchsbeweis deklariert, obwohl die Unstetigkeit direkt geführt wurde (es wurde kein Widerspruch hergeleitet). Auch war die Beweisrichtung oftmals falsch (es wurde mit der zu zeigenden Aussage begonnen). Ein weiterer Fehler war, dass $p=0$ zu spät eingeführt wurde (es sollte am Anfang definiert werden).
+
+Die Illustrationen waren oftmals richtig. Ein Hauptfehler war hier, dass nur eine und nicht zwei Illustrationen erstellt wurden. Beim Beweis mit der Folgenstetigkeit fehlte oftmals der Bezug zur angegebenen Folge.
+
+\section{Aufgabe 3.4.1 und 3.4.4}
+
+\subsection{Aufgabe 3.4.1}
+
+Zeigen Sie sowohl in kartesischen Koordinaten als auch in Polarkoordinaten, dass die komplexe Multiplikation kommutativ und assoziativ ist, d.h. dass
+
+\begin{align}
+  zw &= wz \\
+  z(wu) &= (zw)u
+\end{align}
+
+für alle $z,w,c\in\C$.
+
+\subsection{Aufgabe 3.4.4}
+
+Zeigen Sie (wahlweise in kartesischen Koordinaten oder in Polarkoordinaten), dass für alle $z\in\C$ gilt:
+
+\begin{enumerate}
+  \item $\operatorname{Re}(z) = \frac{z+\bar z}2$
+  \item $\operatorname{Im}(z) = \frac{z-\bar z}{2i}$
+  \item $|z|^2=z\bar z$
+  \item $z^{-1} = \frac{\bar z}{|z|^2}$, falls $z\neq 0$
+\end{enumerate}
+
+Illustrieren Sie die Formeln zudem mit Hilfe von Diagrammen.
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde von den Studierenden gut bearbeitet. Es gab wenig Probleme bei den notwendigen Umformungen. In wenigen Fällen war die Beweisrichtung falsch (aus der zu zeigenden Gleichung wird eine wahre Aussage hergeleitet, ohne dass Äquivalenzen ausgezeichnet waren).
+
+\subsection{Aufgabe 3.4.1}
+
+Wenige Studierende haben den Beweis nur in kartesischen Koordinaten geführt.
+
+\subsection{Anmerkung 3.4.4}
+
+Wenige haben nicht alle Illustrationen angefertigt. Auch wurde in den Zeichnungen manchmal $z^{-1}$ so eingezeichnet, dass $z^{-1} = -\bar z$ ist.
+
+\end{document}
