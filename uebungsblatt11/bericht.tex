@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\C}{\mathbb C}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Übungsblatt 10}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 3.6.2}
+
+\subsection{Aufgabenstellung}
+
+Visualisieren Sie die $\epsilon$-$\delta$-Stetigkeit einer Funktion $f:\C\to\C$ an der Stelle $p\in \C$. Betrachten Sie hierzu Kreise der Ebene.
+
+\subsection{Anmerkungen}
+
+In dieser Aufgabe gab es in Grunde zwei Arten von Lösungen: Entweder wurde die Aufgabe sehr gut oder sehr schlecht bearbeitet. Die richtigen Lösungen überwiegten deutlich. Bei den falschen Lösungen wurde oft versucht, das Epsilon-Delta-Kriterium in einem Diagramm zu zeichnen. Hier wurde das Bild $f(\C)$ oftmals als eindimensionales Objekt (in der Regel als Kreis $\{\exp(iy): y\in[0,2\pi)\}$) aufgefasst. In einer Lösung wurde der Graph von $f:\C\to\C$ als ein dreidimensionales (bzgl. $\R$) Objekt gezeichnet. Manche scheinen auch die $\epsilon$-$\delta$-Stetigkeit reellwertiger Funktionen illustriert zu haben.
+
+\section{Aufgabe 3.6.4}
+
+\subsection{Aufgabenstellung}
+
+Zeigen Sie, dass für alle $n\in\N$ und $x\in\R$ gilt:
+
+\begin{align}
+  (\cos x+i\sin x)^n = \cos(nx)+i\sin(nx).
+\end{align}
+
+Leiten Sie hieraus die Verdopplungsformeln für $\cos(2x)$ und $\sin(2x)$ ab.
+
+\subsection{Anmerkungen}
+
+In dieser Aufgabe gab es zwei grundlegende Beweisstrategien: Beweis durch vollständige Induktion und Beweis durch die Umformung $\cos(x)+i\sin(x) = \exp(ix)$. Beim Beweis durch vollständige Induktion wurde als Induktionsanfang oftmals $n=1$ anstatt $n=0$ gewählt. Beim anderen Beweis fehlte immer eine Begründung der Termumformung $\exp(ix)^n = \exp(inx)$. Hier haben Studierende zum Teil auf die Potenzgesetze verwiesen, obwohl diese nur im Reellen eingeführt wurden. Wenn die Verdopplungsformel gezeigt wurden, dann oftmals richtig.
+
+\section{Aufgabe 3.6.6}
+
+\subsection{Aufgabenstellung}
+
+Skizzieren Sie die Mengen
+
+\begin{align}
+  A &= \{(x,y)\in\C : x\in[0,1],y\in[0,\pi] \}, \\
+  B &= \exp(A) = \{ \exp(x+iy) : (x,y) \in A \}
+\end{align}
+
+\subsection{Anmerkungen}
+
+Die Menge $A$ wurde sehr oft richtig gezeichnet. Jedoch wurde diese Menge manchmal als Quadrat visualisiert (die $y$-Achse war dabei richtig skaliert). Ich habe diese Illustration als eine fehlerhafte Skizze bewertet. Auch die Menge $\exp(A)$ wurde oft richtig gezeichnet. Jedoch gab es hier mehr Fehler als bei der ersten Teilaufgabe. So wurde $\exp(A)$ als Halbkreis $\{ \exp(iy) : y\in[0,\pi] \}$ gezeichnet.
+
+\section{Aufgabe 4.1.6}
+
+\subsection{Aufgabenstellungen}
+
+Sei $n\ge 1$. Beweisen Sie mit Hilfe der Dreiecksungleichung für die Euklidische Norm, dass für alle $v,w\in\R^n$ gilt:
+
+\begin{enumerate}
+  \item $\|v-w\| \le \|v\|+\|w\|$
+  \item $\|v\|-\|w\| \le \|v+w\|$
+  \item $\|v\|-\|w\| \le \|v-w\|$
+\end{enumerate}
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde oft richtig bearbeitet. Es gab Probleme, wie sie bei Beweisen von Ungleichungen oft auftreten: So wurde mit der zu zeigenden Aussage begonnen, ohne dass Äquivalenzumformungen durchgeführt wurden. Auch gab es Probleme mit der Einführung der Variablen. So wurde zunächst die Ungleichung $\|v+w\| \le \|v\| + \|w\|$ betrachtet und in der nächsten Zeile mit $\|v-w\| \le \ldots$ weiterargumentiert. Der Buchstabe $w$ bezeichnet in den beiden Beweisschritten unterschiedliche Variablen. Manchmal wurde explizit geschrieben, dass $w=-w$ gesetzt werden solle. Die Studierenden haben dabei den Widerspruch in der Gleichung $w=-w$ für allgemeine $w\in\R^n$ nicht gesehen. Ich denke, dass sich eine Besprechung dieses Themas in einer der Übungsstunden lohnt.
+
+\section{Aufgabe 4.1.7}
+
+\subsection{Aufgabenstellung}
+
+\newcommand*{\s}[1]{\langle {#1} \rangle}
+
+Sei $n\ge1$. Zeigen Sie, dass für alle $\lambda\in\R$ und für alle $v,w,v',w'\in\R^n$ gilt:
+
+\begin{enumerate}
+  \item $\s{v+\lambda v',w} = \s{v,w} + \lambda \s{v',w}$ und $\s{v,w+\lambda w'} = \s{v,w} + \lambda \s{v,w'}$
+  \item $\s{v,w} = \s{w,v}$
+  \item $\s{v,v} > 0$
+\end{enumerate}
+
+\subsection{Anmerkungen}
+
+In der ersten Teilaufgabe wurde manchmal das zu zeigende Gesetz angewandt. Die zweite Teilaufgabe wurde oftmals richtig gelöst. Bei der dritten Teilaufgabe gab es die größten Schwierigkeiten. Hier wurde oftmals falsch bzw. nicht begründet, warum $\s{v,v} = v_1^2+\ldots+v_n^2 \neq 0$ ist. Problematisch war auch, dass mit $v$ wie mit einer reellen Zahl argumentiert wurde. Beispielsweise gab es Fallunterscheidungen darin, ob $v$ positiv oder negativ ist.
+
+\end{document}
