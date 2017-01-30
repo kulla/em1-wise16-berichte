@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\C}{\mathbb C}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Übungsblatt 12}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{4.2.2}
+
+\subsection{Aufgabenstellung}
+
+In einem Dreieck ABC mit Seiten $a$,$b$,$c$ und Winkeln $\alpha$, $\beta$, $\gamma$ gilt:
+
+\begin{align}
+  a^2 = b^2 + c^2 -2\cos(\alpha) bc.
+\end{align}
+
+Geben Sie einen trigonometrischen Beweis des Kosinussatzes mit Hilfe des Satzes von Pythagoras.
+
+\subsection{Anmerkungen}
+
+Der Beweis wurde im Fall, wo der Fußpunkt der Höhe von C im Inneren von AB liegt, richtig beantwortet. Jedoch fehlten oft die Fälle, wo $\alpha \ge \frac \pi2$ oder $\beta \ge \frac \pi2$. Auch bei den Studierenden, die eine Fallunterscheidung vornahmen, fehlten gewisse Fälle bzw. die Fallunterscheidung war nicht vollständig. Nur einmal wurde Vektoranalysis verwendet, um die Aufgabe zu lösen. In den anderen Fällen wurde das Dreieck mit Hilfe der Höhe in rechtwinklige Dreiecke zerlegt und danach wurde mit Hilfe der Definition des Kosinus und Sinus an rechtwinkligen Dreiecken bzw. mit dem Satz des Pythagoras argumentiert.
+
+\section{4.2.5}
+
+\subsection{Aufgabenstellung}
+
+Zeigen Sie, dass für alle $u,v\in\R^2$ gilt:
+
+\newcommand*{\pr}[2]{\operatorname{pr}_{#1}\left( #2 \right)}
+\newcommand*{\s}[1]{\langle {#1} \rangle}
+
+\begin{enumerate}
+  \item $\pr{u}{u} = u$
+  \item $\pr{u}{\pr{u}{v}} = \pr{u}{v}$
+  \item $\s{\pr{u}{v},u} = \s{v,u}$
+  \item $\pr{v}{\pr{u}{v}} = \cos^2(\phi) v$, falls $v,w\neq 0$ und $\phi$ ist der Winkel zwischen $v$ und $w$
+\end{enumerate}
+
+Zeichnen Sie ein Diagramm zur Illustration von (4) und ergänzen Sie es, die Größen $\cos^n(\phi)$ für $n\ge 1$ sichtbar werden. Nehmen Sie dabei an, dass $u$ und $v$ normiert sind.
+
+\subsection{Anmerkungen}
+
+Beim Aufschreiben der Beweise gab es größere Probleme. So wurden oftmals die notwendigen Variablen nicht eingeführt. In der vierten Teilaufgabe wurde manchmal falsch angenommen, dass $u$ bzw. $v$ normiert wären. Auch fehlte stets eine Fallunterscheidung, ob $u=0$ oder $u\neq 1$. Weiterhin fehlte oft ein einleitender Text bzw. eine Einordnung der gemachten Rechnungen. Die Rechnungen waren im Fall $u,v\neq 0$ oft richtig.
+
+Die Zeichnung wurde manchmal vergessen. In den Fällen, wo eine Illustrierung angefertigt wurde, fehlte oft die Bezeichnung von $\cos^2(\pi)v$ bzw. $\cos^n(\pi)$ für $n\ge 1$.
+
+\section{Aufgabe 4.3.2}
+
+\subsection{Aufgabenstellung}
+
+Sei $A\in\R^{2\times 2}$. Zeigen Sie, dass für alle $v,w\in\R^2$ und $\lambda,\mu\in\R$ gilt:
+
+\begin{align}
+  A(\lambda v + \mu w) = \lambda A v + \mu A w
+\end{align}
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde in der Regel gut bearbeitet. Manchmal fehlten Zwischenschritte. Auch wurde manchmal die Distributivität der Matrixmultiplikation angewendet, obwohl sie noch nicht beweisen wurde. Auch fehlten oftmals die Definition aller notwendigen Variablen. Dies lagt zum Teil daran, dass ein Einführungsteil fehlte, welches den Beweis einleitete. Zum Teil schwebten auch die Definitionen in der Luft, ohne dass Übergänge zum Beweis geschaffen wurden.
+
+\section{Aufgabe 4.3.3}
+
+\subsection{Aufgabenstellung}
+
+Sei $A\in\R^{2\times 2}$ symmetrisch. Zeigen Sie, dass es eindeutig bestimmte $\lambda\in\R$ und $B\in\R^{2\times 2}$ gibt mit den Eigenschaften:
+
+\begin{align}
+  A = \lambda E_2 + B, \operatorname{spur}(B) = 0
+\end{align}
+
+\subsection{Anmerkungen}
+
+Bei diesem Beweis fehlte oftmals der Existenzbeweis. Der Eindeutigkeitsbeweis wurde oft gut geführt, jedoch fehlte manchmal eine Überprüfung, ob die gefundenen Lösungen auch die geforderten Eigenschaften erfüllen. Bei einigen war die Beweisformulierung recht gut, bei anderen fehlte eine Einbettung der Argumente in einen Text bzw. es fehlten Übergänge zwischen den Argumenten. Gefühlt gab es eine große Streuung bei den Lösungen.
+
+\section{Aufgabe 4.3.4}
+
+\subsection{Aufgabenstellung}
+
+Sei $A\in\R^{2\times 2}$ gegeben mit $\det(A)=0$. Geben Sie ein $v\in\R^2$ an mit $v\neq 0$ und $Av=0$.
+
+\subsection{Anmerkungen}
+
+In dieser Aufgabe wurde nur selten überprüft, ob der bzw. (je nach Fall) die gefundenen Vektoren $v$ wirklich Lösungen von $Av=0$ sind. Bei manchen Lösungen wurden keine Äquivalenzumformungen durchgeführt, so dass Lösungen gefunden wurden, die nicht immer Nullstellen der Matrix $A$ sind. Auch fehlten oft Fallunterscheidungen ob bestimmte Einträge der Matrix Null sind oder nicht bzw. angegebene Fallunterscheidungen waren nicht vollständig. Manchmal waren die Gleichungen nicht in argumentativen Texten eingebunden.
+
+Ein häufiger Fehler waren falsche Schlussfolgerungen. So wurde manchmal aus Gleichungen wie $ab-cd=0$ impliziert, dass $a=c$ und $b=d$ sei. Solche Schlussfolgerungen sorgten für die meisten Punktabzüge.
+
+\end{document}
