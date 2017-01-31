@@ -1,0 +1,195 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{scrextend}
+\usepackage{wasysym}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\C}{\mathbb C}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Hinweise zur Formulierung von Beweisen}
+\author{Stephan Kulla}
+
+\begin{document}
+\maketitle
+
+\section{Schreibe deinen Beweis in vollständigen Sätzen auf}
+
+Beginnen wir mit dem aus meiner Sicht wichtigsten Hinweis: Formuliere deinen Beweis in vollständigen Sätzen. Achte darauf, dass du logische Übergänge schaffst und dass keine Gleichungen „in der Luft schweben“.
+
+Um dies zu schaffen, kannst du folgendermaßen vorgehen: Lies deinen Beweis laut vor. Stell dir dabei vor, dass du deinen Beweis einem Freund / einer Freundin erklärst. Alles, was du sagst, sollte auch aufgeschrieben werden.
+
+\subsection{Beispiel}
+
+Stell dir vor, wir wollen das folgende Gleichungssystem lösen:
+
+\begin{align}
+  x+y &= 2 \\
+  x-y &= 0
+\end{align}
+
+Ein schlecht formulierter Beweis kann folgendermaßen aussehen:
+
+\begin{align}
+  x+y &= 2 \\
+  x-y &= 0 \\
+  2x &= 2 \\
+  x&=1 \\
+  1+y&=2 \\
+  y&=1
+\end{align}
+
+Den Beweis würde man so aber nicht 1:1 vorlesen. Vorgelesen könnte der Beweis so aussehen:
+
+\begin{addmargin}{2cm}
+  \emph{„Wir haben das Gleichungssystem $x+y=2, x-y=0$. Wenn wir beide Gleichungen termweise addieren, dann erhalten wir $2x=2$. Nach Division mit 2 erhalten wir $x=1$. Dies können wir in die Gleichung $x+y=2$ einsetzen und erhalten so $1+y=2$. Daraus ergibt sich wiederum $y=1$. Die Lösung lautet $x=y=1$.}
+\end{addmargin}
+
+Du siehst, im ursprünglichen Beweis fehlen Übergänge und Erklärungen. Ein besser formulierter Beweis ist der folgende:
+
+\begin{addmargin}{2cm}
+  Wir haben das Gleichungssystem
+
+  \begin{align}
+    x+y&=2 \\
+    x-y&=0
+  \end{align}
+
+  Wenn wir beide Gleichungen termweise addieren, dann erhalten wir die Gleichung
+
+  \begin{align}
+    2x=2
+  \end{align}
+
+  Nach Division mit 2 erhalten wir
+
+  \begin{align}
+    x=1
+  \end{align}
+
+  Dies können wir in die Gleichung $x+y=2$ einsetzen und erhalten so
+
+  \begin{align}
+    1+y=2
+  \end{align}
+
+  Daraus ergibt sich wiederum $y=1$. Die Lösung lautet $x=y=1$.
+\end{addmargin}
+
+Der Beweis, der sich so ergibt, ist umfangreich und kann sicherlich gekürzt werden. Jedoch ist so garantiert, dass dein Beweis sehr verständlich ist. Gerade für Schüler und Schülerinnen ist es wichtig, sehr verständliche Lösungen formulieren zu können. Auch enthält der obige Beweis alle notwendigen logischen Übergänge.
+
+\section{Führt alle notwendigen Variablen ein}
+
+Achtet darauf, dass ihr im Beweis alle verwendeten Variablen einführt bzw. definiert. Ihr seit auf der sicheren Seite, wenn ihr dies für alle Variablen macht, die ihr im Beweis irgendwo benutzt (egal, ob diese bereits in der Aufgabenstellung definiert werden oder nicht).
+
+Hierzu müsst ihr beachten, dass ihr die Variablen auch für den gesamten Beweis einführt. In einer Aussage wie „Es ist zu zeigen, dass für alle $x\in\R$ die Aussage $x+x=2x$ gilt“ ist die Variable $x$ nur für diesen einen Satz definiert, jedoch nicht für den nachfolgenden Beweis. Demgegenüber wird durch den Satz „Sei $x\in\R$.“ die Variable $x$ sauber definiert.
+
+\section{Beweise enden mit dem Beweisziel}
+
+Ein Beweis (mit Aussnahme von Äquivalenzbeweisen und Widerspruchsbeweisen) enden mit der zu zeigenden Aussage bzw. der zu zeigenden Gleichung. Es lohnt sich in den meisten Fällen einen Abschlusssatz zu schreiben, in dem ihr zeigt, was ihr zeigen wollt.
+
+\section{Gleichungsketten richtig aufschreiben}
+
+Wenn ihr eine Gleichung $A=B$ durch eine Gleichungskette beweisen wollt (wobei $A$ und $B$ beliebige Terme sind), dann schreibt die Gleichungskette in der Form $A = \ldots = B$ oder in der Form $B = \ldots = A$ auf.
+
+Beispiel: Wenn ihr $a^2+2ab+b^2=(a+b)^2$ beweisen wollt, dann könnt ihr folgende Gleichungskette benutzen:
+
+\begin{align}
+  (a+b)^2 = (a+b)\cdot (a+b) = a^2 + ab + ba + b^2 = a^2 + 2ab + b^2
+\end{align}
+
+Schlecht ist jedoch folgende Gleichungskette:
+
+\begin{align}
+  a^2 + 2ab + b^2 = (a+b)^2 = (a+b)\cdot (a+b) = a^2 + ab + ba + b^2 = a^2 + 2ab + b^2
+\end{align}
+
+Für den Leser sieht es nämlich so aus, als ob ihr $a^2+2ab + b^2 = a^2 + 2ab + b^2$ beweisen wollt. Dies ist verwirrend.
+
+\section{Fallunterscheidung – Denn Teilen durch Null ist kacke}
+
+Wenn ihr irgendwo durch eine Variable teilt, die potentiell Null sein kann, dann braucht ihr eine Fallunterscheidung. In dieser Fallunterscheidung betrachtet ihr einmal den Fall, wo die Variable gleich Null ist und einmal den Fall, wo die Variable ungleich Null ist. Die Fallunterscheidung muss durchgeführt werden, noch bevor ihr durch diese Variable teilt und kann nicht im Nachhinein geschehen. Auch müssen die einzelnen Fälle deutlich markiert werden und es muss klar sein, wo ein Fall beginnt und endet. Zudem müsst ihr darauf achten, eine vollständige Fallunterscheidung durchzuführen.
+
+Dies betrifft im Übrigen nicht nur das Teilen durch Null. Sie betrifft jede Termumformung, die nicht für alle möglichen Variablenbelegungen nach der Aufgabenstellung möglich ist. Beispielsweise ist nur dann $\|\hat v\| = 0$, wenn $v\neq 1$ ist. Wenn ihr also irgendwo im Beweis $\|\hat v\|=1$ benutzt, dann braucht ihr eine Fallunterscheidung in $v=0$ und $v\neq 0$.
+
+\subsection{Wie schreibt man eine Fallunterscheidung auf?}
+
+Stell dir vor, du willst irgendwo im Beweis durch $x$ teilen. Im Beweis kannst du nun folgendermaßen vorgehen:
+
+\begin{addmargin}{2cm}
+  \textbf{Fall 1:} $x\neq 0$
+
+  \emph{Beweis für den Fall $x\neq 0$, bei dem du durch $x$ teilst.}
+
+  \textbf{Fall 2:} $x = 0$
+
+  \emph{Beweis für den speziellen Fall $x=0$. Hier teilst du natürlich nicht durch die Variable $x$... \smiley{}}
+\end{addmargin}
+
+\section{Unterschied zwischen Existenz- und Eindeutigkeitsbeweisen}
+
+Es ist wichtig, dass ihr Existenz- und Eindeutigkeitsbeweise führen und unterscheiden könnt. Nehme den Beweis dafür, dass $10x+5 = 25$ eindeutig gelöst werden kann. Durch gewisse Überlegungen kommst du darauf, dass $x=2$ diese eindeutige Lösung ist. Im Beweis ist nun folgendes zu beweisen:
+
+\begin{align}
+  10x+5=25 \iff x=2
+\end{align}
+
+Zum einen kannst du hier einen Äquivalenzbeweis führen. Hier musst du aber in jedem Schritt beweisen, dass du eine Äquivalenzumformung gemacht hast. Je nach Äquivalenzbeweis ist dies aufwändig. Alternativ kannst du folgende zwei Beweise führen:
+
+\begin{itemize}
+  \item $10x+5=25 \implies x=2$
+  \item $x=2\implies 10x+5=2$
+\end{itemize}
+
+\subsection{Existenzbeweis}
+
+Im Existenzbeweis gebt ihr das gesuchte Objekt an und zeigt, dass es die geforderte Eigenschaft besitzt. Dies entspricht der Beweisrichtung $x=2 \implies 10x+5=25$. Hier passiert es nicht selten, dass im Beweis das gesuchte Objekte „vom Himmel fällt“. Im Existenzbeweis müsst ihr nicht darlegen, wie ihr das Objekt gefunden habt. So kann man den Existenzbeweis folgendermaßen aufschreiben:
+
+\begin{addmargin}{2cm}
+  \textbf{Existenzbeweis:} Sei $x=2$. Es ist $10x+5=10\cdot 2+5=20+5=25$. Damit erüllt $x=2$ die Eigenschaft $10x+5=25$.
+\end{addmargin}
+
+\subsection{Eindeutigkeitsbeweis}
+
+Beim Eindeutigkeitsbeweis gibt es im Grund zwei Möglichkeiten:
+
+\begin{enumerate}
+  \item Ihr nehmt ein Objekt $x$ mit der geforderten Eigenschaft an (im Beispiel ist die geforderte Eigenschaft $10x+5=25$) und beweist, dass dann $x$ das gesuchte Objekt sein muss (dies entspricht der Beweisrichtung $10x+5=15\implies x=2$).
+  \item Ihr nehmt zwei Objekte $x$ und $\tilde x$ an, die die geforderte Eigenschaft erfüllen und zeigt dann, dass $x=\tilde x$ ist.
+\end{enumerate}
+
+In der ersten Variante des Eindeutigkeitsbeweises könntest folgendes aufschreiben:
+
+\begin{addmargin}{2cm}
+  \textbf{Eindeutigkeitsbeweis:} Sei $x$ eine reelle Zahl mit $10x+5=25$. Es ist dann $10x=20$. Nach Division auf beiden Seiten mit zehn erhält man $x=2$.
+\end{addmargin}
+
+\section{Allgemeine Hinweise}
+
+\begin{itemize}
+  \item Wenn ihr die Aufgabenstellung wiederholt, dann muss klar sein, was die Aufgabenstellung ist und wo eure Lösung beginnt (z.B. indem ihr die Überschriften „Aufgabe“ und „Lösung” beziehungsweise „Beweis“ verwendet).
+  \item Achtet darauf, dass ihr bei Gleichungsketten keine doppelten Gleichheitszeichen schreibt. Gleichungsketten wie
+
+    \begin{align}
+      10(x+1)^2 & = 10(x^2+2x+1) = \\
+      &= 10x^2+20x + 10
+    \end{align}
+
+    sind zu vermeiden. Richtig:
+
+    \begin{align}
+      10(x+1)^2 & = 10(x^2+2x+1) \\
+      &= 10x^2+20x + 10
+    \end{align}
+\end{itemize}
+
+\end{document}
