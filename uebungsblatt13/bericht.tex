@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{ngerman}
+\usepackage{parskip}
+\usepackage{amssymb}
+
+\newcommand*{\R}{\mathbb R}
+\newcommand*{\N}{\mathbb N}
+\newcommand*{\C}{\mathbb C}
+\newcommand*{\Z}{\mathbb Z}
+\newcommand*{\Q}{\mathbb Q}
+\newcommand*{\dx}{\,\mathrm{d}x}
+
+\title{Übungsblatt 13}
+\date{}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Aufgabe 4.4.1}
+
+\subsection{Aufgabenstellung}
+
+Lösen Sie sowohl durch Elimination als auch durch Invertierung der Koeffizientenmatrix das Gleichungssystem
+
+\begin{align}
+  4x+2y &= 1 \\
+  2x + 3y &= -1
+\end{align}
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde von den Studierenden gut gelöst und es gab kaum Probleme.
+
+\section{Aufgabe 4.4.3}
+
+\subsection{Aufgabenstellung}
+
+Geben Sie möglichst einfache Kriterien dafür an, wann eine Diagonalmatrix, eine obere Dreiecksmatrix bzw. eine untere Dreiecksmatrix invertierbar ist. Begründen Sie ihre Antwort und geben Sie Formeln für die Inversen an.
+
+\subsection{Anmerkungen}
+
+Die meisten Studierenden haben das richtige Kriterium gefunden, dass die Diagonaleinträge beide ungleich Null sein müssen. Bei der Herleitung fehlte oft eine Begründung, warum dieses Kriterium äquivalent zur Invertierbarkeit der Matrix ist. Zwar wurde es aus der Invertierbarkeit hergeleitet, es fehlte aber die Rückrichtung. In wenigen fehlen wurde die Determinante einer Dreiecksmatrix falsch berechnet, womit die Aufgabe nicht richtig gelöst werden könnte.
+
+Auch die inversen Matrizen wurden oft richtig gerechnet. In einigen Fällen fehlte eine Vereinfachung des resultierenden Terms und manchmal wurden Rechenfehler bei der Bestimmung der Komplementärmatrix gemacht. Hier wurde beispielsweise die transponierte Matrix benutzt.
+
+\section{Aufgabe 4.4.9}
+
+\subsection{Aufgabenstellung}
+
+Bestimmen Sie alle invertierbaren Matrizen $A\in\R^{2\times 2}$ mit $A^{-1} = A$.
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe hat wie erwartet die größten Schwierigkeiten bereitet. Einige haben dennoch diese Aufgabe gut und vollständig lösen können. Manche Studierende haben selbstinverse Matrizen angegeben, wobei die Betrachtung der Vollstänbdigkeit ihrer Lösung fehlte.
+
+Häufig wurden Fallunterscheidungen vergessen. So wurde aus der Gleichung $b=\frac{-b}{\operatorname{det}(A)}$ geschlussfolgert, dass $\operatorname{det}(A)=-1$ sein müsse, was aber für $b=0$ nicht der Fall sein muss. Generell fehlten häufig Fallunterscheidungen, ob gewisse Variablen Null sind oder nicht.
+
+\section{Aufgabe 4.5.2}
+
+\subsection{Aufgabenstellung}
+
+Sei $A\in\R^{2\times 2}$, und seien $v,w$ Eigenvektoren von $A$ zum gleichen Eigenwert $\lambda$. Weiter sei $u\in\operatorname{span}(v,w)$ mit $u\neq 0$. Zeigen Sie, dass $u$ ein Eigenvektor von $A$ zum Eigenwert $\lambda$ ist.
+
+\subsection{Anmerkungen}
+
+Die Beweisidee hinter den meisten abgegebenen Aufgaben war richtig. Probleme gab es in der Variableneinführung. So nutzten Studierende Formulierungen wie „Sei $u\in\operatorname{span}(v,w)$ mit $u\neq 0$. Sei $\delta,\mu\in\R$ beliebig. Es ist $u=\delta v + \mu w$.“ In einigen Fällen fehlte auch die Angabe, dass $v$, $w$ Eigenvektoren von $A$ zum selben Eigenwert sind. In einigen Fällen wurde $\operatorname{span}(v,w) = \{ \lambda v + \lambda w : \lambda \in\R\}$ definiert, obwohl bereits $\lambda$ als Eigenvariable definiert war.
+
+Auch wurde die Anwendung einer Matrix auf einen Vektor kommutativ geschrieben. Sprich: Anstelle von $Av$ wurde $vA$ geschrieben. Den Studierenden schien nicht klar zu sein, dass die Schreibweise $vA$ keinen Sinn macht.
+
+\section{Aufgabe 4.5.5}
+
+\subsection{Aufgabenstellung}
+
+Sei $A=\operatorname{rot}_\phi\in\R^{2\times 2}$ eine Rotationsmatrix um einen Winkel $\phi\in[0,2\pi[$. Zeigen Sie, dass $A$ genau dann Eigenwerte besitzt, wenn $\phi = 0$ oder $\phi = \pi$.
+
+\subsection{Anmerkungen}
+
+Diese Aufgabe wurde oft richtig bearbeitet. Die Beweisformulierung war in der Regel auch gut. Ein häufig auftretender Fehler war der, dass die Studierenden für die Fälle $\phi=0$ und $\phi=\pi$ nachgewiesen haben, dass dann die Matrix Eigenvektoren besitzt, jedoch ein Beweis fehlte, dass dies die einzigen Fälle sind.
+
+\end{document}
